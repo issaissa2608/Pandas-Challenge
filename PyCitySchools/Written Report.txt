@@ -1,0 +1,25 @@
+ANALYSIS SUMMARY
+This analysis investigate a particular city's school district, the analysis aim to help the school board and mayor make strategic decisions regarding future school budgets and priorities. This breaks down into sections: district, schools, students, performances, size and spending. These give insight to where schools have areas to improve.
+
+
+CONCLUSION
+First Conclusion
+
+                    Average Math Score  Average Reading Score  % Passing Math  % Passing Reading  % Overall Passing
+School Size                                                                                                        
+Small (<1000)                83.821598              83.929843       93.550225          96.099437          89.883853
+Medium (1000-2000)           83.374684              83.864438       93.599695          96.790680          90.621535
+Large (2000-5000)            77.746417              81.344493       69.963361          82.766634          58.286003
+
+Based on the table above: Schools with larger size have a lower overall passing %. This could be due to having larger class sizes which means there are no capacity to focus on all student adequately.
+Small sized schools and medium size schools have similar overall passing %.
+
+
+Second Conclussion
+
+             Average Math Score  Average Reading Score  % Passing Math  % Passing Reading  % Overall Passing
+School Type                                                                                                 
+Charter               83.473852              83.896421       93.620830          96.586489          90.432244
+District              76.956733              80.966636       66.548453          80.799062          53.672208
+
+Again, based on the table above, it is clear that Charter School out-performed the district school across all metrics, hence more focus needs to be on the district school while not negleting focus on the carter school.
