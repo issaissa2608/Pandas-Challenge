@@ -1,6 +1,7 @@
 # Pandas-Challenge
 
 In this assignment, I’ll create and manipulate Pandas DataFrames to analyze school and standardized test data.
+
 Background
 Assuming I am the new Chief Data Scientist for my city's school district. In this capacity, I'll be helping the school board and mayor make strategic decisions regarding future school budgets and priorities.
 As a first task, I've been asked to analyze the district-wide standardized test results. I'll be given access to every student's math and reading scores, as well as various information on the schools they attend. My task is to aggregate the data to showcase obvious trends in school performance.
@@ -51,15 +52,19 @@ Create a DataFrame that lists the average reading score for students of each gra
 Scores by School Spending
 Create a table that breaks down school performance based on average spending ranges (per student).
 Use the code provided below to create four bins with reasonable cutoff values to group school spending.
+
 spending_bins = [0, 585, 630, 645, 680]
 labels = ["<$585", "$585-630", "$630-645", "$645-680"]
+
 Use pd.cut to categorize spending based on the bins.
 Use the following code to then calculate mean scores per spending range.
+
 spending_math_scores = school_spending_df.groupby(["Spending Ranges (Per Student)"])["Average Math Score"].mean()
 spending_reading_scores = school_spending_df.groupby(["Spending Ranges (Per Student)"])["Average Reading Score"].mean()
 spending_passing_math = school_spending_df.groupby(["Spending Ranges (Per Student)"])["% Passing Math"].mean()
 spending_passing_reading = school_spending_df.groupby(["Spending Ranges (Per Student)"])["% Passing Reading"].mean()
 overall_passing_spending = school_spending_df.groupby(["Spending Ranges (Per Student)"])["% Overall Passing"].mean()
+
 Use the scores above to create a DataFrame called spending_summary.
 Include the following metrics in the table:
 •	Average math score
@@ -70,8 +75,10 @@ Include the following metrics in the table:
 
 Scores by School Size
 Use the following code to bin the per_school_summary.
+
 size_bins = [0, 1000, 2000, 5000]
 labels = ["Small (<1000)", "Medium (1000-2000)", "Large (2000-5000)"]
+
 Use pd.cut on the "Total Students" column of the per_school_summary DataFrame.
 Create a DataFrame called size_summary that breaks down school performance based on school size (small, medium, or large).
 
